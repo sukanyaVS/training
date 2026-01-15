@@ -19,4 +19,6 @@ match action:
         amount = int(input("Enter the amount to withdraw : "))
         print("Successfully debited and your current balance is ", (balance - amount))
     case 4:
-         print("Please remove your card ")  
+         print("Please remove your card ")
+    case _:
+         print("Invalid selection. Try again")      
