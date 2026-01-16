@@ -24,9 +24,9 @@ def fingGrade(**marks):
 
     
 
-studA = {"X" : 30, "Y" : 20 , "Z" : 40}
-studB = {"X" : 35, "Y" : 20 , "Z" : 20}
+stud_A = {"X" : 30, "Y" : 20 , "Z" : 40}
+stud_B = {"X" : 35, "Y" : 20 , "Z" : 20}
 
 fingGrade()
-fingGrade(**studA)
-fingGrade(**studB)
+fingGrade(**stud_A)
+fingGrade(**stud_B)
