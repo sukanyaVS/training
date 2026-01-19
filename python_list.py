@@ -25,3 +25,11 @@ def my_function(numbers):
 
 number_list = [1,2,3,4,6,9,10,15,24,55,12]
 my_function(number_list)
+
+
+#Write a Python Program to Remove Multiple Empty Strings From a List of Strings
+
+my_list = ["A","B","","c","D","","","f"]
+new_list = [x for x in my_list if (x != "")]
+print("old list:",my_list)
+print("after removing empty string:",new_list)
