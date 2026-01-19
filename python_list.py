@@ -23,7 +23,7 @@ def my_function(numbers):
 
 
 
-number_list = [1,2,3,4,6,9,10,15,24,55,12]
+number_list = [1,2,3,4,6,9,10,15,24,55,12,90]
 my_function(number_list)
 
 
@@ -33,3 +33,14 @@ my_list = ["A","B","","c","D","","","f"]
 new_list = [x for x in my_list if (x != "")]
 print("old list:",my_list)
 print("after removing empty string:",new_list)
+
+
+
+#Write a Python program using filter() and a lambda function to display 
+# the names and marks of students who scored more than 80 from the given list.
+
+mark_list = [("A",80),("B",75),("C",86),("D",65),("E",90)]
+print("Original list:",mark_list)
+filtered_list = list(filter(lambda mark: mark[1] > 80, mark_list))
+print("Filtered list:",filtered_list)
+
