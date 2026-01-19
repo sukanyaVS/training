@@ -1,11 +1,10 @@
 #Write a Python Program to Count and Filter Odd and Even Numbers of Given List Using Loops
 
 def my_function(numbers):
-    for i in numbers:
-        count_odd= 0
-        count_even = 0
-        even_numbers = []
-        odd_numbers = []
+    count_odd= 0
+    count_even = 0
+    even_numbers = []
+    odd_numbers = []
     
     for i in numbers:
         if(i%2 == 0):
