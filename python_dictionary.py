@@ -35,8 +35,8 @@ def start_quiz(questions):
  score = 0
  for data in questions.values():
     print("Question:",data["q"])
-    for options in data['opt']:
-       print(options)
+    for options in data['opt'].items():
+       print(options[0],'.',options[1])
     user_data = input("Enter option A/B/C/D or S to skip the question or Q to quit the quiz : ")
     user_input = user_data.upper()
     print(user_input)
