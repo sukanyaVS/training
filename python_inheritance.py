@@ -41,18 +41,12 @@ class SavingsAccount(BankAccount):
 
     def withdraw(self, amount):
         balance = self.get_balance()
-        if amount <= 0:
-         print("Invalid withdraw amount")
-        elif amount > balance:
-         print("Insufficient balance")
-        elif (balance - amount) < 1000:
+        if (balance - amount) < 1000:
          print("Minimum balance Rs 1000 must be maintained.")
         else:
-         balance -= amount
-         self.deposit(amount)
-         print("Account balance after withdrawel :" ,balance)      
+         super().withdraw(amount)     
 
 
 obj2 = SavingsAccount(1234, 'Sukanya', 15000, 8)
 obj2.display()
-obj2.withdraw(5000)
+obj2.withdraw(14050)
